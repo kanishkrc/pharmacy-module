@@ -1,0 +1,43 @@
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.status-active {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.status-low-stock {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+.status-expired {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.status-out-of-stock {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.status-completed {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.status-pending {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+.status-cancelled {
+    background: #fef2f2;
+    color: #dc2626;
+}

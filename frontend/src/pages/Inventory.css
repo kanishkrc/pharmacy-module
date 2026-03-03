@@ -1,0 +1,194 @@
+/* Inventory Overview Cards */
+.inventory-overview-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.overview-card {
+    padding: 14px 16px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e8ecf0;
+}
+
+.overview-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.overview-label {
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 400;
+}
+
+.overview-icon {
+    opacity: 0.7;
+}
+
+.icon-blue {
+    color: #3b82f6;
+}
+
+.icon-green {
+    color: #10b981;
+}
+
+.icon-orange {
+    color: #f59e0b;
+}
+
+.icon-purple {
+    color: #8b5cf6;
+}
+
+.overview-value {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Inventory Header */
+.inventory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    margin-top: 4px;
+}
+
+.inventory-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-container {
+    position: relative;
+}
+
+.active-filter-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #3b82f6;
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.filter-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 4px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    z-index: 50;
+    min-width: 150px;
+    overflow: hidden;
+}
+
+.filter-option {
+    display: block;
+    width: 100%;
+    padding: 8px 14px;
+    border: none;
+    background: transparent;
+    text-align: left;
+    font-size: 13px;
+    color: #475569;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s;
+}
+
+.filter-option:hover {
+    background: #f1f5f9;
+}
+
+.filter-option.active {
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.search-bar-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+
+.search-bar-input {
+    width: 100%;
+    padding: 10px 14px 10px 38px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 13px;
+    background: white;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.search-bar-input:focus {
+    border-color: #3b82f6;
+}
+
+/* Quantity colors */
+.qty-warning {
+    color: #ea580c;
+    font-weight: 600;
+}
+
+.qty-danger {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .inventory-overview-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.btn-warn {
+    color: #ea580c;
+    border-color: #fed7aa;
+}
+
+.btn-warn:hover {
+    background: #fff7ed;
+    border-color: #fb923c;
+}
+
+.btn-muted {
+    color: #64748b;
+    border-color: #e2e8f0;
+}
+
+.btn-muted:hover {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+}
