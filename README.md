@@ -2,6 +2,11 @@
 
 A simplified Pharmacy Module for the SwasthiQ EMR system with Dashboard (Sales Overview) and Inventory pages.
 
+## Live Links
+
+- **Frontend**: [https://pharmacy-module-chi.vercel.app](https://pharmacy-module-chi.vercel.app)
+- **Backend API**: [https://pharmacy-api-m398.onrender.com/api](https://pharmacy-api-m398.onrender.com/api)
+
 ## Tech Stack
 
 | Layer | Technology |
